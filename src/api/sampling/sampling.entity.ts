@@ -14,8 +14,8 @@ import { User } from '../user/user.entity';
 export class Sampling {
   @PrimaryGeneratedColumn('increment')
   public sid: number;
-  @Column({ type: 'varchar', length: 100 })
-  public quantity: string;
+  @Column({ type: 'varchar', length: 100, nullable: true })
+  public quantity: number;
   @Column({ type: 'varchar', length: 120 })
   public name: string;
   @Column({ type: 'varchar', length: 150 })

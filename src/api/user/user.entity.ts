@@ -28,7 +28,8 @@ export class User {
   @Optional()
   @OneToOne(() => Address)
   @JoinColumn()
-  address: Address;
+  address: number; //changed to number from Address,
+
   // @OneToMany((_type) => Sampling, (sampling) => sampling.userId, {
   //   eager: true,
   // })

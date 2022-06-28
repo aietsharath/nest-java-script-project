@@ -1,11 +1,19 @@
-import { IsOptional, IsString } from 'class-validator';
+import { IsNumber, IsOptional, IsString } from 'class-validator';
 import { User } from '../user/user.entity';
 // @Entity()
 export class CreateSamplingDto {
-  @IsString()
-  quantity: string;
-  @IsString()
+  // @IsNumber()
+  sid: number;
+  // @IsNumber()
+  @IsOptional()
+  quantity: number;
+  // @IsString()
+  @IsOptional()
   name: string;
-  @IsString()
+  // @IsString()
+  @IsOptional()
   description: string;
+  // @IsNumber()
+  @IsOptional()
+  address: number;
 }

@@ -33,7 +33,7 @@ export class AddressService {
 
     console.log(user);
 
-    user.address = address;
+    // user.address = address; //just commented for another function to execute which is sampling.service
     // console.log(uses);
 
     // console.log(user);
